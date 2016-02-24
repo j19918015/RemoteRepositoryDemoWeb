@@ -24,7 +24,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DemoServlet</servlet-name>
-		<url-pattern>/demo.view</url-pattern>
+		<url-pattern>/demo2.view</url-pattern>
 	</servlet-mapping>
 
 
