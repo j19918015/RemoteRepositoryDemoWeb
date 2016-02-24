@@ -11,6 +11,9 @@
 <h1>This is a new feature.</h1>
 <h1>This is an another feature.</h1>
 
+<<<<<<< HEAD
 <h3><a href="/DemoWeb/function/test.view">TestServlet1</a></h3>
+
+>>>>>>> branch 'master' of https://github.com/j19918015/RemoteRepositoryDemoWeb.git
 </body>
 </html>

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TestServlet extends HttpServlet {
 
+
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("HAHAHAHHAHAHA");
@@ -18,6 +19,7 @@ public class TestServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		this.doGet(request, response);
+
 	}
 
 }
