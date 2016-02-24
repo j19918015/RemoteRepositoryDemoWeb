@@ -14,6 +14,7 @@ public class DemoServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 
+		req.setCharacterEncoding("UTF-8");
 		String name=req.getParameter("name");
 		System.out.println("name="+name);
 		String[] hobby = req.getParameterValues("hobby");
@@ -26,6 +27,8 @@ public class DemoServlet extends HttpServlet {
 		
 		String uri = req.getRequestURI();
 		out.println("<h3>uri:"+uri+"</h3>");
+	
+		out.println("<h3>name:"+name+"</h3");
 		
 		out.println("<h3>hobby:"+hobby+"</h3>");
 		if(hobby!=null && hobby.length!=0) {
