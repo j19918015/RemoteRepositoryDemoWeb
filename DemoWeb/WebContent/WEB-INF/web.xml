@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>DemeWeb</display-name>
+	<servlet>
+		<servlet-name>BinaryServlet</servlet-name>
+		<servlet-class>view.BinaryServlet</servlet-class>
+		<init-param>
+			<param-name>defaultFile</param-name>
+			<param-value>/img/x.jpg</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>BinaryServlet</servlet-name>
+	<url-pattern>/photo.view</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>view.DemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/demo2.view</url-pattern>
+	</servlet-mapping>
+
+
+	<resource-ref>
+		<res-ref-name>jdbc/TestDB</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
