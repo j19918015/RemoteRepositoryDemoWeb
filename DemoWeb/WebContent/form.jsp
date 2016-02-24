@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>基本資料</h1>
-<form action="/DemoWeb/demo.view" method="post">
+<form action="/DemoWeb/demo2.view" method="post">
 請輸入名稱:<input type="text" value="test" name="name">
 興趣:<input type="checkbox" name="hobby" value="music">音樂
     <input type="checkbox" name="hobby" value="movie">電影
