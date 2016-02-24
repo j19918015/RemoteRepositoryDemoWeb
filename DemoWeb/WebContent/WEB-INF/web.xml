@@ -7,7 +7,7 @@
   </servlet>
   <servlet-mapping>
   <servlet-name>DemoServlet</servlet-name>
-  <url-pattern>/demo.view</url-pattern>
+  <url-pattern>/function/demo1.view</url-pattern>
   </servlet-mapping>
   
   
